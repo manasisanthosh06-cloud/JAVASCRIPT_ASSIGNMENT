@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h2><strong>Login</strong></h2>
+
+    <form onsubmit="return validateForm()">
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" maxlength="50">
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" maxlength="50">
+
+        <div class="checkbox">
+            <input type="checkbox" id="remember">
+            <label for="remember">Remember Credentials</label>
+        </div>
+
+        <a href="passwordrecovery.aspx">Forgot Password?</a>
+
+        <br><br>
+
+        <button type="submit">Login</button>
+
+    </form>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
