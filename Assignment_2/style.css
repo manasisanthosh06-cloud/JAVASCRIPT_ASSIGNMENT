@@ -1,0 +1,56 @@
+body{
+    font-family:Verdana, sans-serif;
+    background:linear-gradient(to right, light blue, white);
+}
+
+.container{
+    width:650px;
+    margin:30px auto;
+    background:linear-gradient(to bottom, gold, #f5f5dc);
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 0 15px white;
+}
+
+h2{
+    color:black;
+}
+
+label{
+    display:block;
+    margin-top:12px;
+    font-weight:bold;
+}
+
+input[type="text"],
+select,
+textarea{
+    width:80%;
+    padding:8px;
+    border-radius:5px;
+    border:1px light green;
+}
+
+.gender{
+    margin-top:10px;
+}
+
+.male{
+    color:black;
+    font-weight:bold;
+}
+
+.female{
+    color:black;
+    font-weight:bold;
+}
+
+button{
+    background: white;
+    color: black;
+    padding:10px 20px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
