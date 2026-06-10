@@ -1,0 +1,173 @@
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+<h2><strong>Student Registration Form</strong></h2>
+
+<form onsubmit="return validateForm()">
+
+    <label>Firstname *</label>
+    <input type="text" id="firstname" maxlength="50">
+
+    <label>Lastname *</label>
+    <input type="text" id="lastname" maxlength="50">
+   <label>Date of Birth *</label>
+
+    <select id="date">
+    <option value="">Date</option>
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+    <option>6</option>
+    <option>7</option>
+    <option>8</option>
+    <option>9</option>
+    <option>10</option>
+    <option>11</option>
+    <option>12</option>
+    <option>13</option>
+    <option>14</option>
+    <option>15</option>
+    <option>16</option>
+    <option>17</option>
+    <option>18</option>
+    <option>19</option>
+    <option>20</option>
+    <option>21</option>
+    <option>22</option>
+    <option>23</option>
+    <option>24</option>
+    <option>25</option>
+    <option>26</option>
+    <option>27</option>
+    <option>28</option>
+    <option>29</option>
+    <option>30</option>
+    <option>31</option>
+</select>
+
+<select id="month">
+    <option value="">Month</option>
+    <option>January</option>
+    <option>February</option>
+    <option>March</option>
+    <option>April</option>
+    <option>May</option>
+    <option>June</option>
+    <option>July</option>
+    <option>August</option>
+    <option>September</option>
+    <option>October</option>
+    <option>November</option>
+    <option>December</option>
+</select>
+
+<select id="year">
+    <option value="">Year</option>
+    <option>1980</option>
+    <option>1981</option>
+    <option>1982</option>
+    <option>1983</option>
+    <option>1984</option>
+    <option>1985</option>
+    <option>1986</option>
+    <option>1987</option>
+    <option>1988</option>
+    <option>1989</option>
+    <option>1990</option>
+    <option>1991</option>
+    <option>1992</option>
+    <option>1993</option>
+    <option>1994</option>
+    <option>1995</option>
+    <option>1996</option>
+    <option>1997</option>
+    <option>1998</option>
+    <option>1999</option>
+    <option>2000</option>
+    <option>2001</option>
+    <option>2002</option>
+    <option>2003</option>
+    <option>2004</option>
+    <option>2005</option>
+    <option>2006</option>
+    <option>2007</option>
+    <option>2008</option>
+    <option>2009</option>
+    <option>2010</option>
+    <option>2011</option>
+    <option>2012</option>
+    <option>2013</option>
+    <option>2014</option>
+    <option>2015</option>
+    <option>2016</option>
+    <option>2017</option>
+    <option>2018</option>
+    <option>2019</option>
+    <option>2020</option>
+    <option>2021</option>
+    <option>2022</option>
+    <option>2023</option>
+    <option>2024</option>
+    <option>2025</option>
+</select>
+        <label>Name of Father</label>
+    <input type="text" id="father" maxlength="50">
+
+    <label>Name of Mother</label>
+    <input type="text" id="mother" maxlength="50">
+
+    <label>Gender *</label>
+
+    <div class="gender">
+        <input type="radio" name="gender" value="Male"> <span class="male">Male</span>
+
+        <input type="radio" name="gender" value="Female"> <span class="female">Female</span>
+
+        <input type="radio" name="gender" value="Other"> Other
+    </div>
+
+    <label>Nationality *</label>
+    <select id="nationality">
+        <option value="">Select Nationality</option>
+        <option>🇺🇸 USA</option>
+        <option>🇬🇧 UK</option>
+        <option>🇦🇺 Australia</option>
+        <option>🇨🇳 China</option>
+        <option>🇮🇳 India</option>
+        <option>🇯🇵 Japan</option>
+        <option>🇫🇷 France</option>
+        <option>🇩🇪 Germany</option>
+        <option>🇧🇷 Brazil</option>
+    </select>
+
+    <label>Course *</label>
+    <select id="course">
+        <option value="">Select Course</option>
+        <option>B.Tech</option>
+        <option>M.Tech</option>
+        <option>MCA</option>
+        <option>M.Phil</option>
+        <option>Ph.D</option>
+    </select>
+
+    <label>Specialization *</label>
+    <select id="specialization">
+        <option value="">Select Specialization</option>
+        <option>ECE</option>
+        <option>CSE</option>
+        <option>ME</option>
+        <option>PE</option>
+        <option>CE</option>
+        <option>AE</option>
+        <option>CHE</option>
+    </select>
+
+    <label>Notes</label>
+    <textarea id="notes" cols="50" rows="5"></textarea>
+
+    <br><br>
+
+    <button type="submit">Submit</button>
+
+</form>
