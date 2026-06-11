@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Word Counter</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 30px;
+            
+        }
+
+        textarea{
+            width: 600px;
+            height: 200px;
+        }
+
+        input[type="text"]{
+            width: 200px;
+            padding: 5px;
+        }
+
+        button{
+            padding: 8px 15px;
+            margin-top: 10px;
+        }
+
+        #result{
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+    </style>
+
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <h2>Word Occurrence Counter</h2>
+
+    <textarea id="textArea"></textarea>
+
+    <br><br>
+
+    <input type="text" id="searchWord" placeholder="Enter word">
+
+    <br><br>
+
+    <button onclick="countWord()">Calculate</button>
+
+    <div id="result"></div>
+
+</body>
+</html>
