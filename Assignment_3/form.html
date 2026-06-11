@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Application Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="validation.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>APPLICATION FORM</h1>
+<form id="applicationForm" onsubmit="return validateForm();">
+<h2>Basic Details</h2>
+<label for="firstname">Firstname *</label>
+<input type="text" id="firstname" maxlength="50">
+<label for="lastname">Lastname *</label>
+<input type="text" id="lastname" maxlength="50">
+<label>Date of Birth *</label>
+<select id="dobDay">
+<option value="">Day</option>
+<script>
+for(let i=1;i<=31;i++){
+document.write("<option>"+i+"</option>");
+}
+</script>
+</select>
+<br> <br>
+<select id="dobMonth"><br>
+<option value="">Month</option>
+<option>January</option>
+<option>February</option>
+<option>March</option>
+<option>April</option>
+<option>May</option>
+<option>June</option>
+<option>July</option>
+<option>August</option>
+<option>September</option>
+<option>October</option>
+<option>November</option>
+<option>December</option>
+</select>
+<br> <br>
+<select id="dobYear">
+<option value="">Year</option>
+<script>
+for(let i=1960;i<=2026;i++){
+document.write("<option>"+i+"</option>");
+}
+</script>
+</select>
+<label for="fatherName">Name of Father</label>
+<input type="text" id="fatherName" maxlength="50">
+<label for="motherName">Name of Mother</label>
+<input type="text" id="motherName" maxlength="50">
+<label>Gender *</label>
+<div class="radio-group">
+<input type="radio" name="gender" value="Male"> Male
+<input type="radio" name="gender" value="Female"> Female
+<input type="radio" name="gender" value="Other"> Other
+</div>
+<label for="nationality">Nationality *</label>
+<select id="nationality">
+<option value="">Select Nationality</option>
+<option>USA</option>
+<option>UK</option>
+<option>Australia</option>
+<option>China</option>
+<option>India</option>
+<option>Japan</option>
+<option>France</option>
+<option>Germany</option>
+<option>Brazil</option>
+</select>
+<h2>Communication Details</h2>
+<label for="email">Email</label>
+<input type="text" id="email" maxlength="100">
+<label for="mobile">Mobile Number *</label>
+<input type="text" id="mobile" maxlength="20">
+<label for="alternatePhone">Alternate Phone Number</label>
+<input type="text" id="alternatePhone" maxlength="20">
+<label for="postalAddress">Postal Address</label>
+<textarea id="postalAddress" cols="50" rows="5"></textarea>
+<h2>Education Details</h2>
+<h3>Education 1</h3>
+<label>Course</label>
+<input type="text" id="course1" maxlength="20">
+<label>Specialization</label>
+<input type="text" id="specialization1" maxlength="20">
+<label>Year of Passing</label>
+<select id="passingYear1">
+<option value="">Select</option>
+<script>
+for(let i=1980;i<=2030;i++){
+document.write("<option>"+i+"</option>");
+}
+</script>
+</select>
+<label>Grade / Mark</label>
+<input type="text" id="grade1" maxlength="20">
+
+<h3>Education 2</h3>
+<label>Course</label>
+<input type="text" id="course2" maxlength="20">
+<label>Specialization</label>
+<input type="text" id="specialization2" maxlength="20">
+<label>Year of Passing</label>
+<select id="passingYear2">
+<option value="">Select</option>
+<script>
+for(let i=1980;i<=2030;i++){
+document.write("<option>"+i+"</option>");
+}
+</script>
+</select>
+<label>Grade / Mark</label>
+<input type="text" id="grade2" maxlength="20">
+
+<h3>Education 3</h3>
+<label>Course</label>
+<input type="text" id="course3" maxlength="20">
+<label>Specialization</label>
+<input type="text" id="specialization3" maxlength="20">
+<label>Year of Passing</label>
+<select id="passingYear3">
+<option value="">Select</option>
+<script>
+for(let i=1980;i<=2030;i++){
+document.write("<option>"+i+"</option>");
+}
+</script>
+</select>
+<label>Grade / Mark</label>
+<input type="text" id="grade3" maxlength="20">
+
+<h3>Education 4</h3>
+<label>Course</label>
+<input type="text" id="course4" maxlength="20">
+<label>Specialization</label>
+<input type="text" id="specialization4" maxlength="20">
+<label>Year of Passing</label>
+<select id="passingYear4">
+<option value="">Select</option>
+<script>
+for(let i=1980;i<=2030;i++){
+document.write("<option>"+i+"</option>");
+}
+</script>
+</select>
+<label>Grade / Mark</label>
+<input type="text" id="grade4" maxlength="20">
+
+<h2>Work Experience</h2>
+<h3>Experience 1</h3>
+<label>Company</label>
+<input type="text" id="company1" maxlength="30">
+<label>Position</label>
+<input type="text" id="position1" maxlength="20">
+<label>From Month</label>
+<select id="fromMonth1">
+<option value="">Select</option>
+<option>January</option>
+<option>February</option>
+<option>March</option>
+<option>April</option>
+<option>May</option>
+<option>June</option>
+<option>July</option>
+<option>August</option>
+<option>September</option>
+<option>October</option>
+<option>November</option>
+<option>December</option>
+</select>
+<label>From Year</label>
+<select id="fromYear1">
+<option value="">Select</option>
+<script>
+for(let i=1980;i<=2030;i++){
+document.write("<option>"+i+"</option>");
+}
+</script>
+</select>
+<label>To Month</label>
+<select id="toMonth1">
+<option value="">Select</option>
+<option>January</option>
+<option>February</option>
+<option>March</option>
+<option>April</option>
+<option>May</option>
+<option>June</option>
+<option>July</option>
+<option>August</option>
+<option>September</option>
+<option>October</option>
+<option>November</option>
+<option>December</option>
+</select>
+<label>To Year</label>
+<select id="toYear1">
+<option value="">Select</option>
+<script>
+for(let i=1980;i<=2030;i++){
+document.write("<option>"+i+"</option>");
+}
+</script>
+</select>
+<label>Remarks</label>
+<textarea id="workRemarks1" cols="10" rows="2"></textarea>
+
+<h3>Experience 2</h3>
+<label>Company</label>
+<input type="text" id="company2" maxlength="30">
+<label>Position</label>
+<input type="text" id="position2" maxlength="20">
+<label>From Month</label>
+<select id="fromMonth2">
+<option value="">Select</option>
+<option>January</option>
+<option>February</option>
+<option>March</option>
+<option>April</option>
+<option>May</option>
+<option>June</option>
+<option>July</option>
+<option>August</option>
+<option>September</option>
+<option>October</option>
+<option>November</option>
+<option>December</option>
+</select>
+<label>From Year</label>
+<select id="fromYear2">
+<option value="">Select</option>
+<script>
+for(let i=1980;i<=2030;i++){
+document.write("<option>"+i+"</option>");
+}
+</script>
+</select>
+<label>To Month</label>
+<select id="toMonth2">
+<option value="">Select</option>
+<option>January</option>
+<option>February</option>
+<option>March</option>
+<option>April</option>
+<option>May</option>
+<option>June</option>
+<option>July</option>
+<option>August</option>
+<option>September</option>
+<option>October</option>
+<option>November</option>
+<option>December</option>
+</select>
+<label>To Year</label>
+<select id="toYear2">
+<option value="">Select</option>
+<script>
+for(let i=1980;i<=2030;i++){
+document.write("<option>"+i+"</option>");
+}
+</script>
+</select>
+<label>Remarks</label>
+<textarea id="workRemarks2" cols="10" rows="2"></textarea>
+
+
+<h3>Experience 3</h3>
+<label>Company</label>
+<input type="text" id="company3" maxlength="30">
+<label>Position</label>
+<input type="text" id="position3" maxlength="20">
+<label>From Month</label>
+<select id="fromMonth3">
+<option value="">Select</option>
+<option>January</option>
+<option>February</option>
+<option>March</option>
+<option>April</option>
+<option>May</option>
+<option>June</option>
+<option>July</option>
+<option>August</option>
+<option>September</option>
+<option>October</option>
+<option>November</option>
+<option>December</option>
+</select>
+<label>From Year</label>
+<select id="fromYear3">
+<option value="">Select</option>
+<script>
+for(let i=1980;i<=2030;i++){
+document.write("<option>"+i+"</option>");
+}
+</script>
+</select>
+<label>To Month</label>
+<select id="toMonth3">
+<option value="">Select</option>
+<option>January</option>
+<option>February</option>
+<option>March</option>
+<option>April</option>
+<option>May</option>
+<option>June</option>
+<option>July</option>
+<option>August</option>
+<option>September</option>
+<option>October</option>
+<option>November</option>
+<option>December</option>
+</select>
+<label>To Year</label>
+<select id="toYear3">
+<option value="">Select</option>
+<script>
+for(let i=1980;i<=2030;i++){
+document.write("<option>"+i+"</option>");
+}
+</script>
+</select>
+<label>Remarks</label>
+<textarea id="workRemarks3" cols="10" rows="2"></textarea>
+
+
+<h3>Experience 4</h3>
+<label>Company</label>
+<input type="text" id="company4" maxlength="30">
+<label>Position</label>
+<input type="text" id="position4" maxlength="20">
+<label>From Month</label>
+<select id="fromMonth4">
+<option value="">Select</option>
+<option>January</option>
+<option>February</option>
+<option>March</option>
+<option>April</option>
+<option>May</option>
+<option>June</option>
+<option>July</option>
+<option>August</option>
+<option>September</option>
+<option>October</option>
+<option>November</option>
+<option>December</option>
+</select>
+<label>From Year</label>
+<select id="fromYear4">
+<option value="">Select</option>
+<script>
+for(let i=1980;i<=2030;i++){
+document.write("<option>"+i+"</option>");
+}
+</script>
+</select>
+<label>To Month</label>
+<select id="toMonth4">
+<option value="">Select</option>
+<option>January</option>
+<option>February</option>
+<option>March</option>
+<option>April</option>
+<option>May</option>
+<option>June</option>
+<option>July</option>
+<option>August</option>
+<option>September</option>
+<option>October</option>
+<option>November</option>
+<option>December</option>
+</select>
+<label>To Year</label>
+<select id="toYear4">
+<option value="">Select</option>
+<script>
+for(let i=1980;i<=2030;i++){
+document.write("<option>"+i+"</option>");
+}
+</script>
+</select>
+<label>Remarks</label>
+<textarea id="workRemarks4" cols="10" rows="2"></textarea>
+
+<h2>Identification Details</h2>
+<label>Aadhar Number *</label>
+<input type="text" id="aadhar" maxlength="16">
+<label>PAN</label>
+<input type="text" id="pan" maxlength="10">
+<label>Passport Number</label>
+<input type="text" id="passport" maxlength="8">
+<label>Passport Expiry Month</label>
+<select id="passportMonth">
+<option value="">Select</option>
+<option>January</option>
+<option>February</option>
+<option>March</option>
+<option>April</option>
+<option>May</option>
+<option>June</option>
+<option>July</option>
+<option>August</option>
+<option>September</option>
+<option>October</option>
+<option>November</option>
+<option>December</option>
+</select>
+<label>Passport Expiry Year</label>
+<select id="passportYear">
+<option value="">Select</option>
+<script>
+for(let i=2024;i<=2050;i++){
+document.write("<option>"+i+"</option>");
+}
+</script>
+</select>
+<label>PF Account Number</label>
+<input type="text" id="pfAccount" maxlength="20">
+
+<h2>Comments</h2>
+<label>Quality of Experience (1-5)</label>
+<input type="range" min="1" max="5" id="qualityExperience">
+<label>Quality of Education (1-5)</label>
+<input type="range" min="1" max="5" id="qualityEducation">
+<label>Technical Test Result</label>
+<input type="text" id="technicalResult" maxlength="30">
+<label>Interviewer</label>
+<input type="text" id="interviewer" maxlength="30">
+<label>Interviewer Comments</label>
+<textarea id="interviewerComments" cols="50" rows="5"></textarea>
+<label>Remarks</label>
+<textarea id="remarks" cols="50" rows="5"></textarea>
+
+<br><br>
+<input type="submit" value="Submit">
+
+</form>
+</div>
+
+</body>
+</html>
